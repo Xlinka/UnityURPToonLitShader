@@ -8,7 +8,7 @@ Shader "SimpleURPToonLitExample(With Outline)"
         [MainTexture]_BaseMap("_BaseMap (Albedo)", 2D) = "white" {}
         [HDR][MainColor]_BaseColor("_BaseColor", Color) = (1,1,1,1)
         [Header(Alpha)]
-        [Toggle(_UseAlphaClipping)]_UseAlphaClipping("_UseAlphaClipping", Float) = 0
+        [Toggle(_UseAlphaClipping)]_UseAlphaClipping("_UseAlphaClipping", Range(0,1)) = 0
         _Cutoff("_Cutoff (Alpha Cutoff)", Range(0.0, 1.0)) = 0.5
         [Header(Emission)]
         [Toggle]_UseEmission("_UseEmission (on/off Emission completely)", Float) = 0
